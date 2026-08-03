@@ -1,10 +1,9 @@
+import React from "react"
 
-import React from 'react'
-
-export default function DefaultLayout({children}) {
+export default function UnauthedLayout({ children }) {
   return (
-    <div>
-      <main>{children}</main>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+      <div className="w-full max-w-sm">{children}</div>
     </div>
   )
 }
